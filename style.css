@@ -64,6 +64,10 @@ header::before {
   transition: clip-path 0.2s ease-out;
 }
 
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
 h1 {
   font-weight: 100;
   text-shadow: 0 0 10px #000;
