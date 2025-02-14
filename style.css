@@ -66,7 +66,6 @@ header::before {
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 h1 {
   font-weight: 100;
@@ -116,7 +115,7 @@ p {
 }
 
 .glowmobile {
-  position: absolute;
+  position: fixed;
   z-index: -7777;
   opacity: 0;
   display: none;
@@ -209,6 +208,10 @@ p {
 
 /* Медиа-запросы для мобильных устройств */
 @media only screen and (max-width: 768px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
   body {
     overflow-x: hidden;
   }
